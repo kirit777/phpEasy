@@ -63,6 +63,9 @@ to use it you need to first download and place this package in your main folder
    1 connection
    2 table name
    3 array of colomn name
-   4 array of value which in that colomn
+   4 array of value which in that colomn \n
+   5 in this parameter you can put any \n
+        for AND use '&'
+        for OR use '|'
    
    
