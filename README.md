@@ -40,5 +40,29 @@ to use it you need to first download and place this package in your main folder
       mysqli_affected_rows($con)
       etc,.
         
-        
+*- Delete by Single Colomn Condition
+    To Delete Value just do following
     
+        $del = delete($conn,"table_name","stud_id","5");    
+
+   for delete a record by only single colomn condtion just call delete() method,which take 4 parameters
+   1 connection
+   2 table name
+   3 colomn name
+   4 value which in that colomn
+   
+
+*- Delete by Multiple Colomn Condition
+    To Delete Value just do following
+    
+        $key = array("stud_id","stud_city");
+        $val = array("6","jnd");
+        $del1 = deleteMany($conn,"table_name",$key,$val,"|");    
+
+   for delete a record by multiple colomn condtion just call deleteMany() method,which take 5 parameters
+   1 connection
+   2 table name
+   3 array of colomn name
+   4 array of value which in that colomn
+   
+   
